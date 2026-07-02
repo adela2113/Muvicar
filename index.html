@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muvicar - Logística y Transporte Inteligente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1E3A8A',
+                        'primary-container': '#DBEAFE',
+                        'secondary': '#F59E0B',
+                        'surface': '#F8FAFC',
+                        'on-surface-variant': '#64748B',
+                        'outline': '#94A3B8',
+                        'outline-variant': '#CBD5E1'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Icons&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body class="bg-surface text-slate-800 font-sans antialiased">
+
+    <!-- --- NAVBAR --- -->
+    <header class="sticky top-0 z-40 w-full border-b border-outline-variant bg-white/80 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+                <span class="text-xl font-black tracking-tight text-primary font-mono">MUVICAR</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+                <a href="index.html" class="text-primary font-bold">Inicio</a>
+                <a href="cotizar.html" class="hover:text-primary transition-colors">Cotizar Viaje</a>
+                <a href="conductor.html" class="hover:text-primary transition-colors text-secondary font-semibold">Ser Conductor</a>
+                <a href="beneficios.html" class="hover:text-primary transition-colors">Beneficios</a>
+                <a href="soporte.html" class="hover:text-primary transition-colors">Soporte</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- --- SECCIÓN HERO --- -->
+    <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-28 bg-gradient-to-b from-primary-container/30 to-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                    Operando en Yopal y sus alrededores
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-none">
+                    Transporte de carga <br class="hidden sm:inline">
+                    <span class="text-primary">al alcance de un clic.</span>
+                </h1>
+                <p class="text-base sm:text-lg text-on-surface-variant max-w-2xl mx-auto lg:mx-0">
+                    Conectamos tus mercancías, mudanzas y cargas pesadas con vehículos verificados en tiempo real. Cotizaciones instantáneas con tarifas justas y transparentes.
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="cotizar.html" class="bg-primary text-white font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-slate-800 transition-all shadow-md active:scale-95">
+                        Solicitar Servicio Ahora
+                    </a>
+                    <a href="conductor.html" class="border border-outline text-slate-700 font-semibold text-sm px-6 py-3.5 rounded-xl hover:bg-white transition-all active:scale-95">
+                        Registrarme como Conductor
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="w-full max-w-sm bg-white p-6 rounded-3xl shadow-xl border border-outline-variant/50 space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary mt-1">radio_button_checked</span>
+                            <div>
+                                <h4 class="text-xs font-mono text-outline uppercase">Punto de Recogida</h4>
+                                <p class="text-sm font-semibold">📍 Centro Logístico, Calle 30</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">location_on</span>
+                            <div>
+                                <h4 class="text-xs font-mono text-outline uppercase">Destino Final</h4>
+                                <p class="text-sm font-semibold">🏢 Aguazul</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-outline-variant/60 py-8 text-center text-xs text-on-surface-variant font-mono">
+        <p>&copy; 2026 Muvicar Tecnologías de Transporte S.A.S. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

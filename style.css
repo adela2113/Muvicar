@@ -1,0 +1,75 @@
+/* --- Capas de Estilo y Efectos Avanzados --- */
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/* Tipografías por Defecto Integradas */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Efecto Glassmorphism según Especificación DESIGN.md */
+.glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Gradiente de Integración para el Mapa */
+.hero-map-gradient {
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 0) 50%, rgba(249, 249, 249, 0.8) 85%, rgba(249, 249, 249, 1) 100%);
+}
+
+/* Animaciones de Entrada Interactivas de alto rendimiento */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.scale-up {
+    animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.dynamic-fade-in {
+    animation: fadeIn 0.25s ease-in-out forwards;
+}
+
+/* Estilos de Selección e Inputs Modificados para consistencia visual */
+select, input {
+    transition: all 0.2s ease-in-out;
+}
+
+select:focus, input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 104, 118, 0.2) !important;
+}
+
+/* Ajustes Responsive Especiales para Dispositivos de Gama Baja */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

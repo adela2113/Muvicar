@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Muvicar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { 'primary': '#1E3A8A', 'secondary': '#F59E0B', 'surface': '#F8FAFC', 'on-surface-variant': '#64748B', 'outline': '#94A3B8', 'outline-variant': '#CBD5E1' } } }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body class="bg-surface text-slate-800 font-sans">
+
+    <!-- --- NAVBAR --- -->
+    <header class="sticky top-0 z-40 w-full border-b border-outline-variant bg-white/80 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+                <span class="text-xl font-black tracking-tight text-primary font-mono">MUVICAR</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+                <a href="index.html" class="hover:text-primary">Inicio</a>
+                <a href="cotizar.html" class="hover:text-primary">Cotizar Viaje</a>
+                <a href="conductor.html" class="hover:text-primary text-secondary font-semibold">Ser Conductor</a>
+                <a href="beneficios.html" class="hover:text-primary">Beneficios</a>
+                <a href="soporte.html" class="text-primary font-bold">Soporte</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- --- SECCIÓN: SOPORTE --- -->
+    <section class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Atención Corporativa y Alianzas</h2>
+            <form action="https://formsubmit.co/mendivelsoalexandra782@gmail.com" method="POST" class="space-y-4 text-slate-900 mt-6">
+                <input type="hidden" name="_subject" value="📩 Nuevo Mensaje de Contacto - Muvicar">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input required name="Nombre_Interesado" type="text" class="w-full rounded-xl bg-white p-3 text-sm" placeholder="Nombre Completo *">
+                    <input required name="Email_Interesado" type="email" class="w-full rounded-xl bg-white p-3 text-sm" placeholder="Correo Electrónico *">
+                </div>
+                <textarea required name="Mensaje_Cuerpo" rows="4" class="w-full rounded-xl bg-white p-3 text-sm" placeholder="Escribe aquí los detalles de tu consulta..."></textarea>
+                <button type="submit" class="w-full bg-secondary text-slate-950 font-bold py-4 rounded-xl hover:bg-amber-400">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

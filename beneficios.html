@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios - Muvicar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { 'primary': '#1E3A8A', 'secondary': '#F59E0B', 'surface': '#F8FAFC', 'on-surface-variant': '#64748B', 'outline': '#94A3B8', 'outline-variant': '#CBD5E1' } } }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body class="bg-surface text-slate-800 font-sans">
+
+    <!-- --- NAVBAR --- -->
+    <header class="sticky top-0 z-40 w-full border-b border-outline-variant bg-white/80 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+                <span class="text-xl font-black tracking-tight text-primary font-mono">MUVICAR</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+                <a href="index.html" class="hover:text-primary">Inicio</a>
+                <a href="cotizar.html" class="hover:text-primary">Cotizar Viaje</a>
+                <a href="conductor.html" class="hover:text-primary text-secondary font-semibold">Ser Conductor</a>
+                <a href="beneficios.html" class="text-primary font-bold">Beneficios</a>
+                <a href="soporte.html" class="hover:text-primary">Soporte</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- --- SECCIÓN: BENEFICIOS --- -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">¿Por qué mover tu carga con Muvicar?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-surface border space-y-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">speed</span>
+                    <h3 class="font-bold text-base text-slate-900">Asignación Rápida</h3>
+                    <p class="text-xs text-on-surface-variant">Algoritmos que localizan el vehículo idóneo más cercano en minutos.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-surface border space-y-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">shield_heart</span>
+                    <h3 class="font-bold text-base text-slate-900">Seguridad Extrema</h3>
+                    <p class="text-xs text-on-surface-variant">Conductores validados con antecedentes y revisiones completas.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-surface border space-y-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+                    <h3 class="font-bold text-base text-slate-900">Precios Transparentes</h3>
+                    <p class="text-xs text-on-surface-variant">Tarifas fijas conocidas de forma clara antes de iniciar el servicio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
